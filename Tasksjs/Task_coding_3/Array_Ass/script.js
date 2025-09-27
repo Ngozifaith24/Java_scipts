@@ -133,3 +133,35 @@ console.log("")
 function getTopMovie(){
     
 }
+
+
+
+// ## 🎯 Practice Exercise 4
+
+// ### Comprehensive Practice Exercise: Student Report System
+
+// Build a program that manages student grades using arrays, loops, and functions.
+
+// **Your Challenge:**  
+// Create a system with multiple functions that can:
+
+// 1. **Add Student** - Store student names and their grades in an array  
+// 2. **Calculate Average** - Compute the average grade for the class  
+// 3. **Find Top & Bottom Student** - Identify the student with the highest and lowest score  
+// 4. **Grade Categorizer** - Assign letter grades (A, B, C, D, F) based on numeric scores  
+// 5. **Report Generator** - Print a formatted class report showing:  
+//    - Each student’s name, grade, and letter grade  
+//    - Class average  
+//    - Top student  
+//    - Lowest student  
+
+// **Requirements:**  
+// - Use arrays to store multiple students  
+// - Use `for` or `for...of` loops to process data  
+// - Write at least 5 reusable functions  
+// - Validate inputs (no negative grades, no grades above 100)  
+// - Use `Math.max()` and `Math.min()` for comparisons  
+// - Return results in a well-formatted way (like a table or list)  
+
+// **Challenge:**  
+// Sort the students by grade (highest → lowest) before printing the report.  
