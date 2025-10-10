@@ -131,7 +131,15 @@ console.log("The Average ratings:",getAverageRating(ratings))
 console.log("")
 
 function getTopMovie(){
-    
+    console.log("\n🎬 Top Rated Nollywood Movies (6+):");
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].ratings >= 6) {
+      console.log(movies[i].getTopMovie());
+    }
+
+}  
+
+  
 }
 
 
@@ -164,4 +172,49 @@ function getTopMovie(){
 // - Return results in a well-formatted way (like a table or list)  
 
 // **Challenge:**  
-// Sort the students by grade (highest → lowest) before printing the report.  
+// Sort the students by grade (highest → lowest) before printing the report. 
+let student_names = ["Tunji", "Helen","John", "Onuwa", "Kunle"]
+let student_grades = [72, 80, 86, 90, 59] 
+console.log("Students", student_names)
+console.log("Student_grades", student_grades)
+
+// 2. **Calculate Average** - Compute the average grade for the class 
+function getAverage(grades){
+    let total = 0
+    for(let grade of grades){
+        total += grade;
+    }
+    return total /grades.length
+}
+console.log("Average grade:",getAverage(grades))
+
+// 3. **Find Top & Bottom Student** - Identify the student with the highest and lowest score  
+function getTopStudent(){
+     let Topstudent = 0;
+    for(let student_grade of student_grades){
+        if(student_grade > Topstudent){
+            Topstudent= student_grade;
+        }
+    }
+    return Topstudent;
+}
+console.log(`TopStudent:${student_names[3]}`, getTopStudent())
+    
+function getBottomStudent(){
+     let Bottomstudent = 0;
+    for(let student_grade of student_grades){
+        if(student_grade < Bottomstudent){
+            Bottomstudent= student_grade;
+        }
+    }
+    return Bottomstudent;
+}
+console.log(`ButtomStudent:${student_names[4]}`, getBottomStudent())
+
+
+function getGrade(grade){
+    let A = Math.max(70,90)
+    let B = Math.max(60,69)
+    let C = Math.max(50,59)
+
+}

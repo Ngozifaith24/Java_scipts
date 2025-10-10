@@ -29,7 +29,45 @@
 
 // **Build it in the cell below:**
 
+function displayInfo(){
+    let firstName = "Omuekwu"
+    let lastName = "Ngozi"
+    var age = 27
+    var isStudent = true
+    const favColor = "Black"
+    age_in_5 = age + 5;
+    // alert("Button clicked")
 
+   let output = `
+
+   <div class = "output">
+   <p> 
+        My first name is: ${firstName}.
+   </p>
+
+    <p> 
+        My last name is: ${lastName}.
+   </p>
+
+    <p> 
+        I am ${age}.
+   </p>
+
+   <p> 
+        Am I a student? well that's ${isStudent}.
+   </p>
+     <p> 
+   I will ${age_in_5} in 5 years.
+   </p>
+   <p> 
+        Fun fact about me: My favorite color is ${favColor}.
+   </p>
+   </div>
+    ` ;
+
+    document.getElementById("text").innerHTML = output;
+    console.log(firstName, lastName)
+}
 // ## 🎯 Practice Exercise 2: Advanced Simple Calculator
 
 // **Task:** Build a comprehensive calculator with multiple operations and comparisons

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tracker</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainBG">
+        <h1 class=" first_title">STUDENT PERFORMACE TRACKER</h1>
+        <form class="form">
+            <div class="StudenName">
+                <label for="Student's Name">Student Name</label>
+                <input type="text" id="StudentName" name="Student Name" placeholder="Enter the student name">
+            </div>
+            <div class="studentAge">
+                <label for="Student's Age">Student Age</label>
+                <input type="number" id="StudentAge" name="StudentAge" placeholder="Enter the Student age eg; 18">
+            </div>
+            <div>
+                <label for="Student's class">Student Class</label>
+                <select name="Student Class" id="Studentclass">
+                    <option value="">Select the class</option>
+                    <option value="JSS 1">JSS 1</option>
+                    <option value="JSS 2">JSS 2</option>
+                    <option value="JSS 3">JSS 3</option>
+                    <option value="SS 1">SS 1</option>
+                    <option value="SS 2">SS 2</option>
+                    <option value="SS 3">SS 3</option>
+                </select>
+            </div>
+            <div class="studentImage">
+                <h4>Student Passport</h4>
+                <figure class="image">
+                    <img src="https://unsplash.com/photos/a-person-wearing-a-graduation-gown-3HcRgBIZS-s" alt="Student image">
+                    <figcaption><input type="text" placeholder="Enter student name"></figcaption>
+                </figure>
+            <div class="sub-1">
+                <label for="English Score">English score</label>
+                <input type="number" id="number-input" min="40" max="80" placeholder="40-80">
+            </div>
+            <div class="sub-2">
+                <label for="Mathematics Score">Mathematics score</label>
+                <input type="number" id="number-input" min="40" max="80" placeholder="40-80">
+            </div>
+            <div class="sub-3">
+                <label for="Civic-Education Score">Civic Education</label>
+                <input type="number" id="number-input" min="40" max="80" placeholder="40-80">
+            </div>
+
+            <button class="button" type="Add Student">Add Student</button>
+        </form>
+        <input type="text" placeholder="Search by student name">
+        <table class="tables">
+            <thead>
+                <tr class="table">
+                    <th>Student picture</th>
+                    <th>Student Name</th>
+                    <th>Student Class</th>
+                    <th>Student Average score</th>
+                    <th>Performace</th>
+                    <th>action</th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+
+</html>
